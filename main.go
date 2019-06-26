@@ -101,16 +101,40 @@ func main() {
 	// fmt.Printf("res1 : %v, res2 : %v, res3 : %v\n", res1, res2, res3)
 
 	//========== 8
-	var myBoolean bool = true
-	var anotherBoolean = false // Inferred type
+	// var myBoolean bool = true
+	// var anotherBoolean = false // Inferred type
 
-	var truth = 3 <= 5
-	var falsehood = 10 != 10
+	// var truth = 3 <= 5
+	// var falsehood = 10 != 10
 
-	// Short Circuiting
-	var res1 = 10 > 20 && 5 == 5     // Second operand is not evaluated since first evaluates to false
-	var res2 = 2*2 == 4 || 10%3 == 0 // Second operand is not evaluated since first evaluates to true
+	// // Short Circuiting
+	// var res1 = 10 > 20 && 5 == 5     // Second operand is not evaluated since first evaluates to false
+	// var res2 = 2*2 == 4 || 10%3 == 0 // Second operand is not evaluated since first evaluates to true
 
-	fmt.Println(myBoolean, anotherBoolean, truth, falsehood, res1, res2)
+	// fmt.Println(myBoolean, anotherBoolean, truth, falsehood, res1, res2)
+
+	//=========== 9
+	var x complex64 = 3.4 + 2.9i
+	var y = 5 + 7i // Type inferred as `complex128` (default type for complex numbers)
+
+	fmt.Println(x, y)
+
+	// Creating complex no from variables
+	var a1 = 4.5
+	var a2 = 7.1
+
+	var c = complex(a1, a2) // a1 + a2*i won't work
+	fmt.Println(c)
+
+	// ===== Complex No Operations =====
+	var a = 3 + 5i
+	var b = 2 + 4i
+
+	var res1 = a + b
+	var res2 = a - b
+	var res3 = a * b
+	var res4 = a / b
+
+	fmt.Println(res1, res2, res3, res4)
 
 }
