@@ -91,9 +91,15 @@ func main() {
 	// 	fmt.Printf("%d ", i)
 	// }
 	//============= 8
+	// i := 2
+    // for ;i <= 10; i += 2 {
+	//     fmt.Printf("%d ", i)
+	// }
+	//============9
 	i := 2
-    for ;i <= 10; i += 2 {
-	    fmt.Printf("%d ", i)
-    }
+	for ;i <= 20; {
+		fmt.Printf("%d ", i)
+		i *= 2
+	}
 }
 	
