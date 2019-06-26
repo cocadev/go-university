@@ -26,11 +26,23 @@ func main() {
 	// } 
 
 	//=====================2
-	var age = 18
-	if age >= 18 {
-		fmt.Println("You're eligible to vote!")
+	// var age = 18
+	// if age >= 18 {
+	// 	fmt.Println("You're eligible to vote!")
+	// } else {
+	// 	fmt.Println("You're not eligible to vote!")
+	// }
+
+	//======================3
+	var BMI = 21.0
+	if BMI < 18.5 {
+		fmt.Println("You are underweight");
+	} else if BMI >= 18.5 && BMI < 25.0 {
+		fmt.Println("Your weight is normal");
+	} else if BMI >= 25.0 && BMI < 30.0 {
+		fmt.Println("You're overweight")
 	} else {
-		fmt.Println("You're not eligible to vote!")
+		fmt.Println("You're obese")
 	}
 }
 	
