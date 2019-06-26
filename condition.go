@@ -102,11 +102,18 @@ func main() {
 	// 	i *= 2
 	// }
 	//============= 10
-	for num := 1; num <= 100; num++ {
-		if num%3 == 0 && num%5 == 0 {
-			fmt.Printf("First positive number divisible by both 3 and 5 is %d\n", num)
-			break
+	// for num := 1; num <= 100; num++ {
+	// 	if num%3 == 0 && num%5 == 0 {
+	// 		fmt.Printf("First positive number divisible by both 3 and 5 is %d\n", num)
+	// 		break
+	// 	}
+	// }
+	//============= 11
+	for num := 1; num <= 10; num++ {
+		if num%2 == 0 {
+			continue;
 		}
+		fmt.Printf("%d ", num)
 	}
 }
 	
