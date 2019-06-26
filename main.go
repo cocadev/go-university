@@ -114,27 +114,37 @@ func main() {
 	// fmt.Println(myBoolean, anotherBoolean, truth, falsehood, res1, res2)
 
 	//=========== 9
-	var x complex64 = 3.4 + 2.9i
-	var y = 5 + 7i // Type inferred as `complex128` (default type for complex numbers)
+	// var x complex64 = 3.4 + 2.9i
+	// var y = 5 + 7i // Type inferred as `complex128` (default type for complex numbers)
 
-	fmt.Println(x, y)
+	// fmt.Println(x, y)
 
-	// Creating complex no from variables
-	var a1 = 4.5
-	var a2 = 7.1
+	// // Creating complex no from variables
+	// var a1 = 4.5
+	// var a2 = 7.1
 
-	var c = complex(a1, a2) // a1 + a2*i won't work
-	fmt.Println(c)
+	// var c = complex(a1, a2) // a1 + a2*i won't work
+	// fmt.Println(c)
 
-	// ===== Complex No Operations =====
-	var a = 3 + 5i
-	var b = 2 + 4i
+	// // ===== Complex No Operations =====
+	// var a = 3 + 5i
+	// var b = 2 + 4i
 
-	var res1 = a + b
-	var res2 = a - b
-	var res3 = a * b
-	var res4 = a / b
+	// var res1 = a + b
+	// var res2 = a - b
+	// var res3 = a * b
+	// var res4 = a / b
 
-	fmt.Println(res1, res2, res3, res4)
+	// fmt.Println(res1, res2, res3, res4)
+
+	//=============== 10
+	var website = "\thttps://www.callicoder.com\t\n"
+
+	// Raw String (Can span multiple lines. Escape characters are not interpreted)
+	var siteDescription = `\t\tCalliCoder is a programming blog where you can find
+                           practical guides and tutorials on programming languages, 
+                           web development, and desktop app development.\t\n`
+
+	fmt.Println(website, siteDescription)
 
 }
