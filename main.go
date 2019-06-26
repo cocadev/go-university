@@ -138,13 +138,35 @@ func main() {
 	// fmt.Println(res1, res2, res3, res4)
 
 	//=============== 10
-	var website = "\thttps://www.callicoder.com\t\n"
+	// var website = "\thttps://www.callicoder.com\t\n"
 
-	// Raw String (Can span multiple lines. Escape characters are not interpreted)
-	var siteDescription = `\t\tCalliCoder is a programming blog where you can find
-                           practical guides and tutorials on programming languages, 
-                           web development, and desktop app development.\t\n`
+	// // Raw String (Can span multiple lines. Escape characters are not interpreted)
+	// var siteDescription = `\t\tCalliCoder is a programming blog where you can find
+    //                        practical guides and tutorials on programming languages, 
+    //                        web development, and desktop app development.\t\n`
 
-	fmt.Println(website, siteDescription)
+	// fmt.Println(website, siteDescription)
+
+	//================ 11
+	var a int64 = 4
+	var b int = int(a)  // Explicit Type Conversion
+
+	var c float64 = 6.5
+
+	// Explicit Type Conversion
+	var result = float64(b) + c  // Works
+
+	fmt.Println(result)
+
+
+	// ==================
+
+
+	// The general syntax for converting a value v to a type T is T(v)
+	var myInt int = 65
+	var myUint uint = uint(myInt)
+	var myFloat float64 = float64(myInt)
+
+	fmt.Println(myInt, myUint, myFloat)
 
 }
