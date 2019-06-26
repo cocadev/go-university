@@ -74,16 +74,21 @@ func main() {
 	// 	fmt.Println("Invalid Day")		
 	// }
 	//======================= 6
-	var BMI = 21.0 
-	switch {
-		case BMI < 18.5:
-			fmt.Println("You're underweight")
-		case BMI >= 18.5 && BMI < 25.0:
-			fmt.Println("Your weight is normal")
-		case BMI >= 25.0 && BMI < 30.0:
-			fmt.Println("You're overweight")
-		default:
-			fmt.Println("You're obese")	
+	// var BMI = 21.0 
+	// switch {
+	// 	case BMI < 18.5:
+	// 		fmt.Println("You're underweight")
+	// 	case BMI >= 18.5 && BMI < 25.0:
+	// 		fmt.Println("Your weight is normal")
+	// 	case BMI >= 25.0 && BMI < 30.0:
+	// 		fmt.Println("You're overweight")
+	// 	default:
+	// 		fmt.Println("You're obese")	
+	// }
+
+	//================== 7
+	for i := 0; i < 10; i++ {
+		fmt.Printf("%d ", i)
 	}
 }
 	
