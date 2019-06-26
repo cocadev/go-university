@@ -47,33 +47,39 @@ func main() {
 
 	//================================= 4
 
-	var (
-		firstName, lastName string
-		age                 int
-		salary              float64
-		isConfirmed         bool
-	)
+	// var (
+	// 	firstName, lastName string
+	// 	age                 int
+	// 	salary              float64
+	// 	isConfirmed         bool
+	// )
 
-	fmt.Printf("firstName: %s, lastName: %s, age: %d, salary: %f, isConfirmed: %t\n",
-		firstName, lastName, age, salary, isConfirmed)
+	// fmt.Printf("firstName: %s, lastName: %s, age: %d, salary: %f, isConfirmed: %t\n",
+	// 	firstName, lastName, age, salary, isConfirmed)
 
 	//================================== 5
-	var myInt8 int8 = 97
+	// var myInt8 int8 = 97
 
-	/*
-	  When you don't declare any type explicitly, the type inferred is `int`
-	  (The default type for integers)
-	*/
-	var myInt = 1200
+	// /*
+	//   When you don't declare any type explicitly, the type inferred is `int`
+	//   (The default type for integers)
+	// */
+	// var myInt = 1200
 
-	var myUint uint = 500
+	// var myUint uint = 500
 
-	var myHexNumber = 0xFF  // Use prefix '0x' or '0X' for declaring hexadecimal numbers
-	var myOctalNumber = 034 // Use prefix '0' for declaring octal numbers
+	// var myHexNumber = 0xFF  // Use prefix '0x' or '0X' for declaring hexadecimal numbers
+	// var myOctalNumber = 034 // Use prefix '0' for declaring octal numbers
 
-	var myFloat32 float32 = 4.5
-	var myFloat = 9.12 // // Type inferred as `float64` (the default type for floating-point numbers)
+	// var myFloat32 float32 = 4.5
+	// var myFloat = 9.12 // // Type inferred as `float64` (the default type for floating-point numbers)
 
-	fmt.Printf("%d, %d, %d, %#x, %#o %f %f\n", myInt8, myInt, myUint, myHexNumber, myOctalNumber, myFloat32, myFloat)
+	// fmt.Printf("%d, %d, %d, %#x, %#o %f %f\n", myInt8, myInt, myUint, myHexNumber, myOctalNumber, myFloat32, myFloat)
+
+	//========= 6
+	var myByte byte = 'a'
+	var myRune rune = '♥'
+
+	fmt.Printf("%c = %d and %c = %U\n", myByte, myByte, myRune, myRune)
 
 }
