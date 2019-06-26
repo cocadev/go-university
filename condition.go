@@ -65,13 +65,25 @@ func main() {
 	// }
 
 	//======================= 5
-	switch dayOfWeek := 5; dayOfWeek {
-	case 1, 2, 3, 4, 5:
-		fmt.Println("Weekday")
-	case 6, 7:
-		fmt.Println("Weekend")
-	default:
-		fmt.Println("Invalid Day")		
+	// switch dayOfWeek := 5; dayOfWeek {
+	// case 1, 2, 3, 4, 5:
+	// 	fmt.Println("Weekday")
+	// case 6, 7:
+	// 	fmt.Println("Weekend")
+	// default:
+	// 	fmt.Println("Invalid Day")		
+	// }
+	//======================= 6
+	var BMI = 21.0 
+	switch {
+		case BMI < 18.5:
+			fmt.Println("You're underweight")
+		case BMI >= 18.5 && BMI < 25.0:
+			fmt.Println("Your weight is normal")
+		case BMI >= 25.0 && BMI < 30.0:
+			fmt.Println("You're overweight")
+		default:
+			fmt.Println("You're obese")	
 	}
 }
 	
