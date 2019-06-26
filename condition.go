@@ -87,8 +87,13 @@ func main() {
 	// }
 
 	//================== 7
-	for i := 0; i < 10; i++ {
-		fmt.Printf("%d ", i)
-	}
+	// for i := 0; i < 10; i++ {
+	// 	fmt.Printf("%d ", i)
+	// }
+	//============= 8
+	i := 2
+    for ;i <= 10; i += 2 {
+	    fmt.Printf("%d ", i)
+    }
 }
 	
