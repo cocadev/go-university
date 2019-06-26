@@ -2,7 +2,7 @@ package main
 
 import (
 	 "fmt"
-	 "math"
+	//  "math"
 	)
 
 func main() {
@@ -86,18 +86,31 @@ func main() {
 	// fmt.Printf("%c = %d and %c = %U\n", myByte, myByte, myRune, myRune)
 
 	//========= 7
-	var a, b = 4, 5
-	var res1 = (a + b) * (a + b)/2  // Arithmetic operations
+	// var a, b = 4, 5
+	// var res1 = (a + b) * (a + b)/2  // Arithmetic operations
 
-	a++ // Increment a by 1
+	// a++ // Increment a by 1
 
-	b += 10 // Increment b by 10
+	// b += 10 // Increment b by 10
 
-	var res2 = a ^ b // Bitwise XOR
+	// var res2 = a ^ b // Bitwise XOR
 
-	var r = 3.5
-	var res3 = math.Pi * r * r  // Operations on floating-point type
+	// var r = 3.5
+	// var res3 = math.Pi * r * r  // Operations on floating-point type
 
-	fmt.Printf("res1 : %v, res2 : %v, res3 : %v\n", res1, res2, res3)
+	// fmt.Printf("res1 : %v, res2 : %v, res3 : %v\n", res1, res2, res3)
+
+	//========== 8
+	var myBoolean bool = true
+	var anotherBoolean = false // Inferred type
+
+	var truth = 3 <= 5
+	var falsehood = 10 != 10
+
+	// Short Circuiting
+	var res1 = 10 > 20 && 5 == 5     // Second operand is not evaluated since first evaluates to false
+	var res2 = 2*2 == 4 || 10%3 == 0 // Second operand is not evaluated since first evaluates to true
+
+	fmt.Println(myBoolean, anotherBoolean, truth, falsehood, res1, res2)
 
 }
